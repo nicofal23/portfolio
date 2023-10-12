@@ -1,0 +1,290 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Oswald:wght@700&display=swap');
+
+.foto {
+    width: 150px;
+    border-radius: 50%;
+    margin: 30px;
+}
+.contenedor {  display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-auto-flow: row dense;
+    grid-template-areas:
+      ". .";
+    width: 100%;
+    height: 100%;
+  }
+  
+
+.header {
+    background-color: #000000; 
+    color: white;
+    padding: 20px;
+    position: fixed;
+    width: 250px; 
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 2;
+    
+}
+
+
+
+.main-content {
+    background-image: url(../assets/img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /* Esto ajustará la imagen para cubrir completamente el elemento */
+    width: 100vw; /* 100% del ancho del viewport */
+    height: 100vh; /* 100% de la altura del viewport */
+    margin: 0; /* Elimina cualquier margen que pueda interferir */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+
+
+.main-content .content {
+    text-align: center;
+}
+
+.main-content .content h3, .main-content .content h1, .main-content .content p {
+    margin: 0;
+}
+
+.main-content .content p span {
+    font-size: 24px;
+}
+
+
+
+.typing-container {
+    display: flex;
+    font-family: Arial, sans-serif;
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+}
+
+#typing-text {
+    text-align: center;
+    border-right: 2px solid #000;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(30, end), blink-caret 0.5s step-end infinite;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
+    } 
+
+    .main-content::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5); /* Color oscuro con 50% de opacidad */
+        z-index: 1; /* Asegura que la capa esté sobre la imagen de fondo */
+    }
+    
+    .main-content {
+        position: relative; /* Establece la posición relativa para que el ::before se posicione correctamente */
+        /* Tu código existente para la imagen de fondo y otras propiedades aquí */
+    }
+    .contenedortitulo {
+        z-index: 2;
+    }
+    .contenedortitulo h1 {
+        font-size: 55px;
+        color: white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+   .espacioenblanco {
+    color: transparent;
+   }
+
+.arrow i {
+    color: white;
+   
+}
+.arrow {
+    z-index: 2;
+    animation: moverArriba 0s ease infinite, aparecer 3s ease infinite;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 1;
+        transform: translateY(-150px);
+    }
+    50% {
+        opacity: 2;
+        transform: translateY(-150px);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(0);
+    }
+}
+
+.contenedor2 {
+    position: fixed;
+    width: 100%;
+    z-index: 3; /* Asegura que el texto esté por encima de otros elementos */
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 16.375rem;
+}
+.contenedor2 {
+    position: relative;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior del contenedor2 */
+    left: 60%; /* Coloca la flecha en el centro horizontalmente */
+    transform: translateX(-50%); /* Ajusta para centrar exactamente */
+}
+
+#typing-text {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.navbar ul {
+    list-style: none; /* Quitar los puntos de lista */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaciado entre los elementos de la lista */
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    text-decoration: none; /* Quitar el subrayado */
+    color: white;
+    transition: color 0.3s, background-color 0.3s; /* Transición para el cambio de color */
+}
+
+.navbar a:hover {
+    color: #28a745; /* Cambiar el color del texto al verde (#28a745) al pasar el mouse */
+    background-color: transparent; /* Opcional: Hacer que el fondo sea transparente al pasar el mouse */
+}
+.iconos {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.main-content {
+    height: 100vh; /* Establece la altura de la parte superior como 100% del viewport */
+    /* Agrega cualquier otro estilo que desees para la parte superior */
+}
+
+.section {
+    position: relative; /* Establece la posición relativa para permitir la superposición */
+    margin-top: 110vh; /* Establece un margen superior igual a la altura de la parte superior */
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh;
+    margin-left: 200px;
+}
+.main-content {
+    height: 100vh; /* Establece la altura de la parte superior como 100% del viewport */
+    /* Agrega cualquier otro estilo que desees para la parte superior */
+}
+
+.underline {
+    text-decoration: underline; /* Agrega subrayado a las letras del medio y espacios */
+    display: inline-block; /* Para que el subrayado no se extienda a toda la línea */
+}
+
+.about-me, .know-me-more {
+    position: absolute; /* Establece la posición absoluta para superponer el texto */
+    top: 0;
+    left: 0;
+}
+.about-me h2{
+    font-size: 80px;
+    color: rgba(156, 156, 156, 0.616);
+}
+.contenedorabout {
+    display: flex;
+}
+.know-me-more {
+    display: flex;
+    margin-top: 33px;
+    margin-left: 125px;
+}
+.div-about {
+    display: flex;
+}
+.descripcion {
+    padding: 20px;
+    margin: 30px;
+}
+.descripcion p {
+    font-size: 26px;
+    padding: 10px;
+}
+
+.datos div h4 {
+    text-decoration: underline;
+}
+.datos {
+    border: 2px solid greenyellow;
+    padding: 10px;
+    animation: cambiaColor 2s infinite; /* 2s es la duración de la animación, "infinite" hace que la animación se repita infinitamente */
+}
+
+@keyframes cambiaColor {
+    0% {
+        border-color: greenyellow;
+    }
+    50% {
+        border-color: orange; /* Cambia a cualquier color que desees en la mitad de la animación */
+    }
+    100% {
+        border-color: greenyellow;
+    }
+}
