@@ -487,9 +487,8 @@ form {
     }
     .iconos {
         display: flex;
-        flex-wrap: nowrap
+        flex-direction: column;
     }
-    
     .navbar-toggler-icon {
         background-color: white; /* Color del ícono del botón de hamburguesa */
     }
