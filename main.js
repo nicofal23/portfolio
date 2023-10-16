@@ -16,7 +16,7 @@ function typeAndErase() {
         if (isTyping) {
             phraseIndex = (phraseIndex + 1) % phrases.length;
         }
-    }
+    } 
 
     const speed = isTyping ? 150 : 75;
     setTimeout(typeAndErase, speed);

@@ -20,7 +20,7 @@ function typeAndErase() {
 
     const speed = isTyping ? 150 : 75;
     setTimeout(typeAndErase, speed);
-}
+} 
 
 typeAndErase(); // Comienza el proceso de tipeo y borrado
 
