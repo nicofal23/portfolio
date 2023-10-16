@@ -1,4 +1,4 @@
-const phrases = ["I'm Nicolas Falciglio", "I'm Frontend Developer"];
+const phrases = ["Soy Nicolas Falciglio", "Soy Desarrollador Frontend"];
 const typingText = document.getElementById('typing-text');
 let phraseIndex = 0;
 let letterIndex = 0;
@@ -23,9 +23,3 @@ function typeAndErase() {
 }
 
 typeAndErase(); // Comienza el proceso de tipeo y borrado
-
-
-
-//flecha
-
-
