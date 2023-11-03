@@ -66,20 +66,4 @@ const sendEmail = async (body) => {
 
 
 
-//logica para los #de ir 
 
-$(document).ready(function() {
-    // Verifica el ancho de la ventana al cargar y redirige el enlace
-    checkWindowSize();
-    // Verifica el ancho de la ventana cuando se redimensiona y redirige el enlace
-    $(window).resize(function() {
-      checkWindowSize();
-    });
-    function checkWindowSize() {
-      if ($(window).width() <= 947) {
-        // Cambia el atributo href del enlace a #mobileaboutme en dispositivos móviles
-        $("#aboutme-link").attr("href", "#mobileaboutme");
-        $("#skills-link").attr("href", "#mobileskill");
-      }
-    }
-  });
