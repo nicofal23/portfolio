@@ -8548,6 +8548,9 @@ button.bg-dark:focus {
         -ms-flex-align: baseline !important;
             align-items: baseline !important;
   }
+  .contenedor {
+    margin: 20px;
+  }
   .align-items-xl-stretch {
     -webkit-box-align: stretch !important;
     -webkit-align-items: stretch !important;
