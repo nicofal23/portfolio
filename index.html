@@ -12,33 +12,49 @@
 <body>
     <div class="contenedor">
     <header>
-        <div class="header">
-            <div class="idioma">
-                <a href="./espanol/espanol.html"><img src="./assets/img/espana.png" alt=""></a>
-                <a href="index.html"><img src="./assets/img/ingles.png" alt=""></a>
-            </div>
-        <img src="./assets/img/perfil.jpg" alt="" class="foto">
-        <nav class="navbar">
-            <ul class="data-container">
-                <li><a href="#inicio" class="boton" >Home</a></li>
-                <li><a href="#aboutme" class="boton" >About me</a></li>
-                <li><a href="#skills" class="boton" >Skills</a></li>
-                <li><a href="#portfolio" class="boton" >Portfolio</a></li>
-                <li><a href="#contact" class="boton" >Contact</a></li>
-            </ul>
-        </nav>
-        <div class="iconos">
-            <div>
-                <a href="https://www.instagram.com/nicolasfalciglio" target="_blank"><img src="./assets/img/instagram.png" alt="imagen instagram" class="img"></a>
-            </div>
-            <div>
-                <a href="https://www.linkedin.com/in/nicolasfalciglio/" target="_blank"><img src="./assets/img/linkedin.png" alt="imagen linkedin" class="img"></a>
-            </div>
-            <div>
-                <a href="https://github.com/nicofal23" target="_blank"><img src="./assets/img/github.png" alt="imagen github" class="img"></a>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <img src="./assets/img/menu1.png" alt="" style="width: 40px">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="header">
+                    <div class="idioma">
+                        <a href="./espanol/espanol.html"><img src="./assets/img/espana.png" alt=""></a>
+                        <a href="index.html"><img src="./assets/img/ingles.png" alt=""></a>
+                    </div>
+                <img src="./assets/img/perfil.jpg" alt="" class="foto">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#inicio">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#aboutme">About me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+              <div class="iconos">
+                <div>
+                    <a href="https://www.instagram.com/nicolasfalciglio" target="_blank"><img src="./assets/img/instagram.png" alt="imagen instagram" class="img"></a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/nicolasfalciglio/" target="_blank"><img src="./assets/img/linkedin.png" alt="imagen linkedin" class="img"></a>
+                </div>
+                <div>
+                    <a href="https://github.com/nicofal23" target="_blank"><img src="./assets/img/github.png" alt="imagen github" class="img"></a>
+                </div>
             </div>
         </div>
-    </div>
+            </div>
+          </nav>
     </header>
         <main id="inicio">
             <div class="main" >
@@ -55,13 +71,15 @@
                         </div>
                     </div>
                     <div class="arrow">
-                        <a href="#aboutme"><i class="fas fa-arrow-down fa-3x"></i></a>
+                        <a href="#aboutme"><i class="fas fa-arrow-down fa-3x" id="aboutme"></i></a>
                     </div>
                 </div>
+                
             </div>
+        
             <!--ABOUT ME-->
             <div class="div-about">
-                <div class="section" id="aboutme">
+                <div class="section" >
                     <div class="know-me-more">
                         <h2>ABOUT ME</h2>
                         <h3>Know me more</h3>
